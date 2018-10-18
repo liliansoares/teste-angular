@@ -1,0 +1,56 @@
+<body>
+
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" (click)="abreMenuLateral()">
+        <svg width="30" height="50">
+          <path d="M0,5 30,5" stroke="#fff" stroke-widht="5" />
+          <path d="M0,14 30,14" stroke="#fff" stroke-widht="5" />
+          <path d="M0,23 30,23" stroke="#fff" stroke-widht="5" />
+        </svg>
+      </a>
+    </span>
+
+    <ul class="navbar-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Service</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" (click)="fecheMenuLateral()">&times;</a>
+    <ul id="menu" class="mainmenu" (click)="subMenu()">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a>
+        <ul id="subItemAbout" class="submenu">
+          <li><a href="#">About1</a></li>
+          <li><a href="#">About2</a>
+            <ul id="subItemAbout2" class="submenu">
+              <li><a href="#">About2.1</a></li>
+              <li><a href="#">About2.2</a></li>
+              <li><a href="#">About2.3</a></li>
+            </ul>
+          </li>
+          <li><a href="subItemAbout">About3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Service</a>
+        <ul id="subItemService" class="submenu" (click)="testeSync()">
+          <li><a href="#">Service1</a></li>
+          <li><a href="#">Service2</a></li>
+          <li><a href="#">Service3</a></li>
+        </ul>
+      </li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </div>
+
+  <div id="main">
+    <h1>Responsive Side Menu</h1>
+  </div>
+
+
+</body>
